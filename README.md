@@ -17,7 +17,14 @@ Go to the project directory
 Install dependencies & Setup the Project
 
 ```bash
+  npm install
   composer install
+```
+
+Create Database SQLite File
+
+```
+    Go to database folder and manually create "database.sqlite"
 ```
 
 ```Generate ENV, Key, Migration and Seeder (if applicable)
