@@ -41,3 +41,14 @@ Route::controller(App\Http\Controllers\InvoiceController::class)
         Route::put('/{invoice}', 'update')->name('invoices.update');
         Route::delete('/{invoice}', 'destroy')->name('invoices.destroy');
     });
+
+Route::controller(App\Http\Controllers\CustomerTransactionController::class)
+    ->prefix('transactions')
+    ->group(function () {
+        Route::get('/', 'index')->name('transactions.index');
+        Route::get('/create', 'create')->name('transactions.create');
+        Route::post('/', 'store')->name('transactions.store');
+        Route::get('/{transaction}', 'edit')->name('transactions.edit');
+        Route::put('/{transaction}', 'update')->name('transactions.update');
+        Route::delete('/{transaction}', 'destroy')->name('transactions.destroy');
+    });

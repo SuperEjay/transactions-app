@@ -37,7 +37,7 @@
 
                         <div class="flex flex-col gap-2">
                             <label for="wallet_balance" class="text-[14px] font-medium">Wallet Balance</label>
-                            <input type="number" class="border-2 rounded-md w-full py-1 px-2 bg-white border-gray-500/30 focus:border-gray-500/50 focus:outline-none {{ $errors->has('wallet_balance') ? 'border-red-500' : '' }}" id="wallet_balance" name="wallet_balance" value="0">
+                            <input type="number" class="border-2 rounded-md w-full py-1 px-2 bg-white border-gray-500/30 focus:border-gray-500/50 focus:outline-none {{ $errors->has('wallet_balance') ? 'border-red-500' : '' }}" id="wallet_balance" name="wallet_balance" value="0" disabled>
 
                             @error('wallet_balance')
                                 <span class="text-red-500 text-sm">{{ $message }}</span>

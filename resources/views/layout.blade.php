@@ -26,7 +26,7 @@
                     </a>
                 </li>
                 <li class="hover:bg-gray-800/60 rounded-md p-2">
-                    <a href="#" class="flex items-center gap-2">
+                    <a href="/transactions" class="flex items-center gap-2">
                         <i class="fa-solid fa-money-bill"></i>
                         Transactions
                     </a>

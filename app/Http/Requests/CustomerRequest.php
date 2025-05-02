@@ -26,7 +26,7 @@ class CustomerRequest extends FormRequest
         return [
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:customers,email,' . $customer,
-            'wallet_balance' => 'required|numeric|min:0',
+            // 'wallet_balance' => 'required|numeric|min:0',
         ];
     }
 }

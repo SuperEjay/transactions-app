@@ -28,8 +28,8 @@
                             </div>
 
                             <div class="flex flex-col gap-2">
-                                <label for="email" class="text-[14px] font-medium">Customer</label>
-                                <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-2 {{ $errors->has('customer_id') ? 'border-red-500' : '' }}" name="customer_id">
+                                <label for="customer_id" class="text-[14px] font-medium">Customer</label>
+                                <select id="customer_id" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-2 {{ $errors->has('customer_id') ? 'border-red-500' : '' }}" name="customer_id">
                                     <option selected>Select Customer</option>
                                     @foreach ($customers as $customer)
                                         <option value="{{ $customer['id'] }}">{{ $customer['name'] }}</option>
